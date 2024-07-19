@@ -1,0 +1,322 @@
+@font-face {
+    font-family: IBM Plex Mono Bold;
+    src: url(../../../Assets/font/IBMPlexMono-Bold.ttf);
+}
+
+@font-face {
+    font-family: IBM Plex Mono Regular;
+    src: url(../../../Assets/font/IBMPlexMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: IBM Plex Sans Regular;
+    src: url(../../../Assets/font/IBMPlexSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: IBM Plex Sans Bold;
+    src: url(../../../Assets/font/IBMPlexSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: Lora Bold;
+    src: url(../../../Assets/font/Lora-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    scroll-behavior: smooth;
+}
+
+main {
+    background-color: #ffffff;
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main nav {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: #6AA06A;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 20px 0px 20px 20px;
+    z-index: 1;
+}
+
+main nav img {
+    width: 110px;
+    height: 110px;
+}
+
+main nav .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 600px;
+    overflow: hidden;
+    align-items: center;
+    margin-left: 30px;
+}
+
+main nav .navigation a {
+    font: 16px IBM Plex Sans Bold;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+main nav .navigation a:hover {
+    color: #967005;
+}
+
+main nav .navigation a:active {
+    color: #ffffff;
+}
+
+main nav aside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 520px;
+    gap: 5px;
+}
+
+main nav aside img {
+    width: 50px;
+    height: 50px;
+}
+
+main nav aside p {
+    position: fixed;
+    align-self: flex-start;
+    font: 18px IBM Plex Sans Regular;
+    color: white;
+    margin-top: 8px;
+    margin-left: 54px;
+    margin-right: 25px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+main nav aside p:hover {
+    background-color: rgb(61, 134, 61);
+}
+
+
+main nav aside .Navigation {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 130px;
+    padding: 0px 0px 40px 0px;
+    width: 145px;
+    height: 80px;
+    background-color: #6AA06A;
+}
+
+main nav aside .Navigation a {
+    font: 18px IBM Plex Sans Regular;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    margin: 10px 5px 0px 5px;
+    border-radius: 5px;
+}
+
+
+.Navigation a:hover {
+    background-color: rgb(61, 134, 61);
+}
+
+main content {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 60px 50px 0px 50px;
+}
+
+main content h1 {
+    font: 45px IBM Plex Sans Bold;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+main content .group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 100px;
+}
+
+main content .group div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: #EFEFEF;
+    width: 600px;
+    height: 250px;
+    border-radius: 60px 0px 60px 0px;
+}
+
+main content .group div h3 {
+    font: 40px IBM Plex Sans Regular;
+}
+
+main content .group div a {
+    font: 20px IBM Plex Sans Regular;
+}
+
+main content .group div p {
+    font: 20px IBM Plex Sans Regular;
+}
+
+main content .group div .oval {
+    width: 300px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: #ADE3AD;
+    margin-top: 10px;
+}
+
+main footer .Footer-Navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(0,0,0,60%);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+}
+
+main footer .Footer-Navigation div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33.3%;
+}
+
+main footer .Footer-Navigation .nav1 h5 {
+    font: 31px IBM Plex Sans Bold;
+    color: white;
+    margin-bottom: 9px;
+    
+}
+
+main footer .Footer-Navigation .nav1 a {
+    font: 20px IBM Plex Sans Regular;
+    color: white;
+    margin: 7px;
+    text-decoration: none;
+}
+
+main footer .Footer-Navigation .nav1 a:hover {
+    text-decoration: underline;
+    color: #d3b257;
+}
+
+main footer .Footer-Navigation .nav2 {
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+main footer .Footer-Navigation .nav2 img {
+    width: 160px;
+    height: 160px;
+    margin-top: 25px;
+}
+
+main footer .Footer-Navigation .nav2 h4 {
+    font: 25px IBM Plex Sans Bold;
+    color: white;
+    margin-top: 20px;
+    text-shadow:1px 1px 3px #ffffff, 0.1px 0.1px 0.1px #ffffff;
+}
+
+main footer .Footer-Navigation .nav2 p {
+    font: 13px IBM Plex Sans Regular;
+    color: white;
+}
+
+main footer .Footer-Navigation .nav2 a {
+    font: 18px IBM Plex Sans Regular;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+main footer .Footer-Navigation .nav2 a:hover {
+    text-decoration: underline;
+    color: #d3b257;
+}
+
+main footer .Footer-Navigation .nav2 .rights {
+    font: 12px IBM Plex Sans Regular;
+    color: #D4C6C6;
+    margin-top: 45px;
+}
+
+main footer .Footer-Navigation .nav3 {
+    gap: 10px;
+    align-items: center;
+}
+
+main footer .Footer-Navigation .nav3 div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 50%;
+    justify-content: row;
+    margin-top: -27px;
+}
+
+main footer .Footer-Navigation .nav3 div h5{
+    font: 31px IBM Plex Sans Bold;
+    color: white;
+    margin-bottom: 13px;
+}
+
+main footer .Footer-Navigation .nav3 div a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    cursor: pointer;
+    width: 100%;
+    text-decoration: none;
+    gap: 8px;
+    margin-bottom: 13px;
+}
+
+main footer .Footer-Navigation .nav3 div a img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+main footer .Footer-Navigation .nav3 div a label {
+    font: 20px IBM Plex Sans Regular;
+    color: white;
+    align-self: center;
+    cursor: pointer;
+}
+
+main footer .Footer-Navigation .nav3 div a label:hover {
+    color: #d3b257;
+}

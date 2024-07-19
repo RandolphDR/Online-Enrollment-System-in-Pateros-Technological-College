@@ -1,0 +1,777 @@
+@font-face {
+    font-family: IBM Plex Mono Bold;
+    src: url(../../../Assets/font/IBMPlexMono-Bold.ttf);
+}
+
+@font-face {
+    font-family: IBM Plex Mono Regular;
+    src: url(../../../Assets/font/IBMPlexMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: IBM Plex Sans Regular;
+    src: url(../../../Assets/font/IBMPlexSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: IBM Plex Sans Bold;
+    src: url(../../../Assets/font/IBMPlexSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: Lora Bold;
+    src: url(../../../Assets/font/Lora-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    scroll-behavior: smooth;
+}
+
+main {
+    background-image: url(../../../Assets/img/hp-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 973px;
+    background-position: top;
+    background-attachment: fixed;
+    width: 100%;
+    height: 3220px;
+}
+
+main nav {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: #6AA06A;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 20px 0px 20px 20px;
+    z-index: 1;
+}
+
+main nav img {
+    width: 110px;
+    height: 110px;
+}
+
+main nav .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 600px;
+    overflow: hidden;
+    align-items: center;
+    margin-left: 30px;
+}
+
+
+main nav .navigation a {
+    font: 16px IBM Plex Sans Bold;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+main nav .navigation a:hover {
+    color: #967005;
+}
+
+main nav .navigation a:active {
+    color: #ffffff;
+}
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    height: 1000px;
+    padding: 110px 0px 30px 0px;
+}
+
+.Header .aside1 {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.aside1 h4 {
+    font: 43px IBM Plex Mono Bold;
+    text-align: center;
+    color: white;
+    margin-top: -200px;
+}
+
+.aside1 h2 {
+    font: 60px IBM Plex Sans Bold;
+    text-align: center;
+    color: white;
+}
+
+.aside1 a {
+    width: 300px;
+    height: 80px;
+    background-color: #CEDB7D;
+    text-align: center;
+    align-content: center;
+    border-radius: 20px;
+    font: 35px IBM Plex Sans Bold;
+    color: white;
+    align-self: center;
+    margin-top: 40px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.aside1 a:active {
+    background-color: darkgray;
+}
+
+.Header .aside2 {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/*LOGIN SELECTION*/
+.Header .aside2-content {
+    width: 521px;
+    height: 830px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex; /* HEYYY HRE*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Header .aside2-content .aside2-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.Header .aside2-content .aside2-header h4 {
+    font: 30px IBM Plex Sans Bold;
+    color: black;
+    margin-top: 50px;
+}
+
+.Header .aside2-content .aside2-header p {
+    font: 20px IBM Plex Sans Regular;
+    color: black;
+}
+
+.Header .aside2-content h3 {
+    font: 27px IBM Plex Sans Bold;
+    color: black;
+}
+
+.Header .aside2-content .aside2-login-selection {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: 440px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.Header .aside2-content .aside2-login-selection a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 50%;
+    height: 230px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.Header .aside2-content .aside2-login-selection a:hover {
+    background-color: lightgray;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.Header .aside2-content .aside2-login-selection a img {
+    border-radius: 50%;
+    background-color: black;
+}
+
+.Header .aside2-content .aside2-login-selection a p {
+    font: 21px IBM Plex Sans Regular;
+    color: white;
+    text-align: center;
+    background-color: #6AA06A;
+    border-radius: 5px;
+    width: 190px;
+    height: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Header .aside2-content .aside2-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.Header .aside2-content .aside2-footer p {
+    text-decoration: none;
+    color: black;
+    font: 18px IBM Plex Sans Regular;
+}
+
+.Header .aside2-content .aside2-footer a {
+    text-decoration: underline;
+    color: blue;
+    font: 18px IBM Plex Sans Regular;
+    cursor: pointer;
+}
+/*form setting*/
+.Header .aside2 .Form {
+    width: 521px;
+    height: 830px;
+    border-radius: 20px;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.Header .aside2 .Form header, .RegisterForm header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    height: 210px;
+}
+
+.Header .aside2 .Form header .back-button, .RegisterForm header .back-button{
+    background: none;
+    color: black;
+    border: none;
+    text-align: center;
+    align-self: flex-start;
+    font: 40px IBM Plex Sans Bold;
+    margin-top: 5px;
+    margin-bottom: -10px;
+    cursor: pointer;
+}
+
+.Header .aside2 .Form header .back-button:hover, .RegisterForm header .back-button:hover {
+    color: red;
+}
+
+.Header .aside2 .Form header .back-button:active, .RegisterForm header .back-button:active {
+    color: black;
+    transition: 0.1ms ease-in-out;
+}
+
+.Header .aside2 .Form header img, .RegisterForm header img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.Header .aside2 .Form header h1, .RegisterForm header h1 {
+    font: 23px Lora Bold;
+}
+
+.Header .aside2 .Form header p, .RegisterForm header p {
+    font: 13px IBM Plex Sans Regular;
+}
+
+/*ADMINFORM*/
+.Header .aside2 .Form .AdminForm {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 80%;
+    height: 480px;
+}
+
+.Header .aside2 .Form form .forgotpass {
+    font: 14px IBM Plex Sans Regular;
+    margin-top: -22px;
+    margin-bottom: 22px;
+    align-self: center;
+}
+
+.Header .aside2 .Form .StudentForm {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 80%;
+    height: 480px;
+}
+
+.Header .aside2 .Form form h1 {
+    font: 20px IBM Plex Mono Bold;
+    margin-bottom: 30px;
+}
+
+.Header .aside2 .Form form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    width: 100%;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+.Header .aside2 .Form form .ShowPassword-Group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    align-self: flex-start;
+}
+
+.Header .aside2 .Form form .ShowPassword-Group input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.Header .aside2 .Form form .ShowPassword-Group label {
+    font: 13px IBM Plex Sans Regular;
+    margin-left: -1px;
+    cursor: pointer;
+}
+
+.Header .aside2 .Form form div label {
+    font: 13px IBM Plex Sans Regular;
+    margin-left: 5px;
+}
+
+.Header .aside2 .Form form div input {
+    font: 17px IBM Plex Sans Regular;
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    background-color: #ADE3AD;
+    outline: none;
+    border: none;
+}
+
+.Header .aside2 .Form form .login-button {
+    width: 150px;
+    height: 40px;
+    font: 20px IBM Plex Sans Regular;
+    color: white;
+    background: #967005;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Header .aside2 .Form form .login-button:hover {
+    background-color: #6BA06A;
+}
+
+.Header .aside2 .Form form .login-button:active {
+    background-color: #967005;
+    transition: 0.1ms ease-in-out;
+}
+
+.Header .aside2 .Form form .footer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 243px;
+}
+
+.Header .aside2 .Form form .footer p {
+    text-decoration: none;
+    color: black;
+    font: 18px IBM Plex Sans Regular;
+}
+
+.Header .aside2 .Form form .footer a {
+    text-decoration: underline;
+    color: blue;
+    font: 18px IBM Plex Sans Regular;
+    cursor: pointer;
+}
+
+.Header .aside2 .RegisterForm {
+    width: 521px;
+    height: 880px;
+    border-radius: 20px;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.Header .aside2 .RegisterForm form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 80%;
+    height: 100%;
+}
+
+.Header .aside2 .RegisterForm form h1 {
+    font: 20px IBM Plex Mono Bold;
+    margin-bottom: 30px;
+}
+
+.Header .aside2 .RegisterForm form group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 5px;
+    gap: 5px;
+}
+
+.Header .aside2 .RegisterForm form group label {
+    font: 13px IBM Plex Sans Regular;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.Header .aside2 .RegisterForm form group input {
+    font: 17px IBM Plex Sans Regular;
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    background-color: #e0e4e0;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.Header .aside2 .RegisterForm form group input:focus {
+    border: 1px solid blue;
+}
+
+.Header .aside2 .RegisterForm form .submit-btn {
+    width: 60%;
+    color: #ffffff;
+    height: 40px;
+    background-color: #6BA06A;
+    font: 19px IBM Plex Sans Bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.Center {
+    width: 100%;
+    height: 1500px;
+    background-color: white;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.Center .Center-Header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+    text-align: center;
+    padding: 30px 100px 0px 100px;
+}
+
+.Center .Center-Header h3 {
+    font: 26px IBM Plex Sans Bold;
+}
+
+.Center .Center-Header p {
+    font: 19px IBM Plex Sans Regular;
+    color: #A0A099;
+}
+
+.Center .Center-Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 130px 0px 130px;
+    gap: 70px;
+    margin-top: 50px;
+}
+
+.Center .Center-Content .Content-Information {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.Center .Center-Content .Content-Information .Information {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.Center .Center-Content .Content-Information .Information h5 {
+    font: 26px IBM Plex Sans Bold;
+}
+
+.Center .Center-Content .Content-Information .Information p {
+    font: 18px IBM Plex Sans Regular;
+    color: #A0A099;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.Center .Center-Content .Content-Information .Information video {
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.Center .Center-Content .Content-Information img {
+    border-radius: 20px;
+    width: 600px;
+    height: 455px;
+}
+
+.Center .Center-Footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.Center hr {
+    border: 1px solid black;
+}
+
+.Center .Center-Footer .Footer-Choices {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 90px;
+}
+
+.Center .Center-Footer .Footer-Choices div {
+    width: 500px;
+    height: 500px;
+    background-color: rgb(241, 232, 232);
+}
+
+.Center .Center-Footer .Footer-Choices div img {
+    width: 500px;
+    height: 300px;
+}
+
+.Center .Center-Footer .Footer-Choices div h5 {
+    font: 20px IBM Plex Sans Bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Center .Center-Footer .Footer-Choices div p {
+    font: 15px IBM Plex Sans Regular;
+    color: #A0A099;
+    margin-bottom: 25px;
+}
+
+.Center .Center-Footer .Footer-Choices div a {
+    font: 18px IBM Plex Sans Bold;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    padding: 7px 20px 7px 20px;
+    border-radius: 30px;
+}
+
+.Center .Center-Footer .Footer-Choices div a:hover {
+    background-color: #6AA06A; 
+}
+
+.Footer {
+    height: 800px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    background-image: url(../../../Assets/img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 840px;
+    padding: 20px 0px 0px 0px;
+}
+
+.Footer .Quotes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    width: 1000px;
+    height: 700px;
+    background: white;
+    box-shadow: 0px 3px 8px rgb(100,100,100);
+}
+
+.Footer .Quotes h4 {
+    font: 40px IBM Plex Sans Bold;
+    margin-top: 50px;
+}
+
+.Footer .Quotes p {
+    font: 27px IBM Plex Sans Bold;
+    margin-top: 40px;
+}
+
+.Footer .Quotes p quote {
+    font: 33px IBM Plex Sans Bold;
+    color: #A3A39A;
+}
+
+.Footer .Quotes .author {
+    font: 25px IBM Plex Sans Regular;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.Footer .Footer-Navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(0,0,0,60%);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+}
+
+.Footer .Footer-Navigation div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33.3%;
+}
+
+.Footer .Footer-Navigation .nav1 h5 {
+    font: 31px IBM Plex Sans Bold;
+    color: white;
+    margin-bottom: 9px;
+    
+}
+
+.Footer .Footer-Navigation .nav1 a {
+    font: 20px IBM Plex Sans Regular;
+    color: white;
+    margin: 7px;
+    text-decoration: none;
+}
+
+.Footer .Footer-Navigation .nav1 a:hover {
+    text-decoration: underline;
+    color: #d3b257;
+}
+
+.Footer .Footer-Navigation .nav2 {
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.Footer .Footer-Navigation .nav2 img {
+    width: 160px;
+    height: 160px;
+    margin-top: 25px;
+}
+
+.Footer .Footer-Navigation .nav2 h4 {
+    font: 25px IBM Plex Sans Bold;
+    color: white;
+    margin-top: 20px;
+    text-shadow:1px 1px 3px #ffffff, 0.1px 0.1px 0.1px #ffffff;
+}
+
+.Footer .Footer-Navigation .nav2 p {
+    font: 13px IBM Plex Sans Regular;
+    color: white;
+}
+
+.Footer .Footer-Navigation .nav2 a {
+    font: 18px IBM Plex Sans Regular;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.Footer .Footer-Navigation .nav2 a:hover {
+    text-decoration: underline;
+    color: #d3b257;
+}
+
+.Footer .Footer-Navigation .nav2 .rights {
+    font: 12px IBM Plex Sans Regular;
+    color: #D4C6C6;
+    margin-top: 45px;
+}
+
+.Footer .Footer-Navigation .nav3 {
+    gap: 10px;
+    align-items: center;
+}
+
+.Footer .Footer-Navigation .nav3 div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 50%;
+    justify-content: row;
+    margin-top: -27px;
+}
+
+.Footer .Footer-Navigation .nav3 div h5{
+    font: 31px IBM Plex Sans Bold;
+    color: white;
+    margin-bottom: 13px;
+}
+
+.Footer .Footer-Navigation .nav3 div a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    cursor: pointer;
+    width: 100%;
+    text-decoration: none;
+    gap: 8px;
+    margin-bottom: 13px;
+}
+
+.Footer .Footer-Navigation .nav3 div a img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.Footer .Footer-Navigation .nav3 div a label {
+    font: 20px IBM Plex Sans Regular;
+    color: white;
+    align-self: center;
+    cursor: pointer;
+}
+
+.Footer .Footer-Navigation .nav3 div a label:hover {
+    color: #d3b257;
+}
